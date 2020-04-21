@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap');
+
+.page {
+  width: 100%;
+  min-height: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+  min-height: 90px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 350px;
+}
+
+.view-type {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.ven-type {
+  background: #4A90E2;
+  border-radius: 3px;
+  padding: 3px 5px;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+}
+
+.ven-type:hover {
+  text-decoration: underline;
+}
+
+.ven-type__text_header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.view-type__name {
+  text-decoration: none;
+  margin-right: 6px;
+}
+
+.view-type__name:link,
+.view-type__name:visited {
+  color: white;
+}
+
+.view-type__name:hover {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+.menu {
+  min-height: 18px;
+  margin: 0;
+}
+
+.menu__header_size {
+  min-width: 368px;
+}
+
+.menu__footer_size {
+  min-width: 353px;
+}
+
+.menu-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style-type: none;
+  display: inline;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.menu-link:link,
+.menu-link:visited {
+  color: white;
+}
+
+.search {
+  min-height: 17px;
+  min-width: 16px;
+  background-image: url(../images/search.png);
+}
+
+.search:hover {
+  background-image: url(../images/searchblue.png);
+}
+
+.content {
+  background: #F2F2F2;
+}
+
+.car-cards {
+  min-height: 100px;
+}
+
+.cars-articles {
+  min-height: 100px;
+}
+
+.rside-bar {
+  min-height: 100px;
+}
+
+.navigation {
+  min-height: 100px;
+}
+
+.popular {
+  min-height: 100px;
+}
+
+.info {
+  background: #171717;
+  min-height: 100px;
+}
+
+.footer {
+  background: #000000;
+  min-height: 94px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 350px;
+}
+
+.copyright {
+  color: white;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
