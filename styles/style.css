@@ -20,13 +20,8 @@
   padding: 0 350px;
 }
 
-.view-type {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.ven-type {
-  background: #4A90E2;
+/* Теги */
+.tags {
   border-radius: 3px;
   padding: 3px 5px;
   color: white;
@@ -34,16 +29,33 @@
   text-decoration: none;
 }
 
-.ven-type:hover {
+.tags:hover {
   text-decoration: underline;
 }
 
-.ven-type__text_header {
+.tags__text_header {
+  background: #4A90E2;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+}
+
+.tags__text_cards {
+  background: #4A90E2;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+/* Тип просмотра ???*/
+.view-type {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .view-type__name {
@@ -61,17 +73,10 @@
   text-decoration: underline;
 }
 
+/* Меню с модификаторами */
 .menu {
   min-height: 18px;
   margin: 0;
-}
-
-.menu__header_size {
-  min-width: 368px;
-}
-
-.menu__footer_size {
-  min-width: 353px;
 }
 
 .menu-links {
@@ -99,6 +104,15 @@
   color: white;
 }
 
+.menu__header_size {
+  min-width: 368px;
+}
+
+.menu__footer_size {
+  min-width: 353px;
+}
+
+/* Значек поиска */
 .search {
   min-height: 17px;
   min-width: 16px;
@@ -109,16 +123,80 @@
   background-image: url(../images/searchblue.png);
 }
 
+/* Контент ниже */
 .content {
   background: #F2F2F2;
 }
 
 .car-cards {
-  min-height: 100px;
+  margin: 15px 350px 0 350px;
+  max-height: 600px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.car-card {
+  max-width: 405px;
+  max-height: 270px;
+  margin: 15px 15px;
+  position: relative;
+}
+
+.car-card__main_size {
+  max-width: 375px;
+  margin: 15px 15px;
+  max-height: 600px;
+}
+
+.car-card-image {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.car-card__article {
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.car-card__article:hover {
+  text-decoration: underline;
+}
+
+.car-card__article-author {
+  margin: 0 0 6px 20px;
+  font-family: PT Sans, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.car-card__article-name {
+  margin: 0 85px 30px 20px;
+  font-family: PT Sans, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+}
+
+.car-card__article-name_text_size {
+  margin: 0 0 30px 20px;
+  font-size: 26px;
+  line-height: 36px;
 }
 
 .cars-articles {
   min-height: 100px;
+  margin: 0 0 0 20px;
 }
 
 .rside-bar {
@@ -138,6 +216,7 @@
   min-height: 100px;
 }
 
+/* Подвал */
 .footer {
   background: #000000;
   min-height: 94px;
@@ -156,3 +235,4 @@
   font-size: 14px;
   line-height: 18px;
 }
+
