@@ -145,17 +145,17 @@
 }
 
 .car-card {
-  max-width: 30%;/*405px;*/
-  max-height: 50%; /* 270px; */
+  max-width: 30%;
+  max-height: 50%;
   margin: 15px 15px;
   position: relative;
 }
 
 .car-card__main_size {
-  max-height: 100%; /* 600px; */
+  max-height: 100%;
 }
 
-.car-card-image {
+.car-card__image {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -202,7 +202,6 @@
   line-height: 36px;
 }
 
-
 .main-content {
   display: flex;
   flex-flow: row nowrap;
@@ -214,29 +213,29 @@
 
 .cars-articles {
   min-height: 100px;
-  width: 60%;/*790px;*/
+  width: 70%;
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
+  padding: 10px;
 }
 
 .article {
-  min-height: 520px;
-  min-width: 775px;
+  min-height: 20px;
+  width: 100%;
   position: relative;
-  margin: 10px 15px 130px 10px;
+  margin-bottom: 130px;
 }
 
 .article-image {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   border-radius: 5px;
 }
 
 .article-preview {
   min-height: 250px;
   min-width: 730px;
+  margin-top: -120;
   position: absolute;
   left: 25px;
   bottom: -120px;
@@ -250,10 +249,6 @@
 
 .article-preview__name {
   margin: 0 auto 0 30px;
-  height: 28px;
-  left: 22.14%;
-  right: 46.93%;
-  top: calc(50% - 28px/2 - 1362px);
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -270,9 +265,6 @@
 .article-preview__author {
   margin: 15px auto 15px 30px;
   height: 18px;
-  left: 22.14%;
-  right: 69.58%;
-  top: calc(50% - 18px/2 - 1324px);
   font-family: PT Sans;
   font-style: italic;
   font-weight: normal;
@@ -284,10 +276,6 @@
 .article-preview__note {
   margin: 0 auto 30px 30px;
   max-width: 640px;
-  left: 22.14%;
-  right: 45.89%;
-  top: 24.18%;
-  bottom: 74.39%;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -296,11 +284,76 @@
   color: #666666;
 }
 
-
 .rside-bar {
   min-height: 100px;
-  width: 40%;/*790px;*/
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
+.post-main {
+  width: 80%;
+  margin: 10px 15px;
+}
+
+.post-main__img {
+  width: 100%;
+}
+
+.post-main__name {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  color: #171717;
+}
+
+.post-main__author {
+  font-family: PT Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #999999;
+}
+
+.post-main__note {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #666666;
+}
+
+.post-main__button {
+  background: #232323;
+  border-radius: 5px;
+  min-height: 50px;
+  width: 100%;
+}
+
+.post-main__button_text_size {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
 
 .navigation {
   min-height: 100px;
